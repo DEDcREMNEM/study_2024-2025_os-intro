@@ -1,0 +1,231 @@
+<p>#Информация</p>
+<h2 id="цель-работы">Цель работы</h2>
+<p>Цель данной лабораторной работы – изучение идеологии и применения
+средств контроля версий, освоение умения по работе с git.</p>
+<h2 id="задание">Задание</h2>
+<ol type="1">
+<li>Создать базовую конфигурацию для работы с git</li>
+<li>Создать ключ SSH</li>
+<li>Создать ключ GPG</li>
+<li>Настроить подписи Git</li>
+<li>Заргеистрироваться на GitHub</li>
+<li>Создать локальный каталог для выполнения заданий по предмету.</li>
+</ol>
+<h2 id="установка-программного-обеспечения">Установка программного
+обеспечения</h2>
+<p>Устанавливаю необходимое программное обеспечение git и gh через
+терминал с помощью команд: dnf install git и dnf install gh (рис. <span
+class="citation" data-cites="fig:001">@fig:001</span>).</p>
+<figure id="fig:001">
+<img src="image/лаба%202/1.png" style="width:70.0%"
+alt="Установка git и gh" />
+<figcaption aria-hidden="true">Установка git и gh</figcaption>
+</figure>
+<h2 id="установка-программного-обеспечения-1">Установка программного
+обеспечения</h2>
+<p>Задаю в качестве имени и email владельца репозитория свои имя,
+фамилию и электронную почту (рис. <span class="citation"
+data-cites="fig:002">@fig:002</span>).</p>
+<figure id="fig:002">
+<img src="image/лаба%202/3.png" style="width:70.0%"
+alt="Задаю имя и email владельца репозитория" />
+<figcaption aria-hidden="true">Задаю имя и email владельца
+репозитория</figcaption>
+</figure>
+<h2 id="установка-программного-обеспечения-2">Установка программного
+обеспечения</h2>
+<p>Настраиваю utf-8 в выводе сообщений git для их корректного
+отображения (рис. <span class="citation"
+data-cites="fig:003">@fig:003</span>).</p>
+<figure id="fig:003">
+<img src="image/лаба%202/4.png" style="width:70.0%"
+alt="Настройка utf-8 в выводе сообщений git" />
+<figcaption aria-hidden="true">Настройка utf-8 в выводе сообщений
+git</figcaption>
+</figure>
+<h2 id="установка-программного-обеспечения-3">Установка программного
+обеспечения</h2>
+<p>Начальной ветке задаю имя master (рис. <span class="citation"
+data-cites="fig:004">@fig:004</span>).</p>
+<figure id="fig:004">
+<img src="image/лаба%202/5.png" style="width:70.0%"
+alt="Задаю имя начальной ветки" />
+<figcaption aria-hidden="true">Задаю имя начальной ветки</figcaption>
+</figure>
+<h2 id="установка-программного-обеспечения-4">Установка программного
+обеспечения</h2>
+<p>Задаю параметры autocrlf и safecrlf (рис. <span class="citation"
+data-cites="fig:005">@fig:005</span>).</p>
+<figure id="fig:005">
+<img src="image/лаба%202/6.png" style="width:70.0%"
+alt="Задаю параметры autocrlf и safecrlf" />
+<figcaption aria-hidden="true">Задаю параметры autocrlf и
+safecrlf</figcaption>
+</figure>
+<h2 id="создание-ключа-ssh">Создание ключа SSH</h2>
+<p>Создаю ключ ssh размером 4096 бит по алгоритму rsa (рис. <span
+class="citation" data-cites="fig:006">@fig:006</span>).</p>
+<figure id="fig:006">
+<img src="image/лаба%202/7.png" style="width:70.0%"
+alt="Генерация ssh ключа по алгоритму rsa" />
+<figcaption aria-hidden="true">Генерация ssh ключа по алгоритму
+rsa</figcaption>
+</figure>
+<h2 id="создание-ключа-ssh-1">Создание ключа SSH</h2>
+<p>Создаю ключ ssh по алгоритму ed25519 (рис. <span class="citation"
+data-cites="fig:007">@fig:007</span>).</p>
+<figure id="fig:007">
+<img src="image/лаба%202/8.png" style="width:70.0%"
+alt="Генерация ssh ключа по алгоритму ed25519" />
+<figcaption aria-hidden="true">Генерация ssh ключа по алгоритму
+ed25519</figcaption>
+</figure>
+<h2 id="создание-ключа-gpg">Создание ключа GPG</h2>
+<p>Генерирую ключ GPG, затем выбираю тип ключа RSA and RSA, задаю
+максиммальную длину ключа: 4096, оставляю неограниченный срок действия
+ключа. Далее отвечаю на вопросы программы о личной информации (рис.
+<span class="citation" data-cites="fig:008">@fig:008</span>).</p>
+<figure id="fig:008">
+<img src="image/лаба%202/9.png" style="width:70.0%"
+alt="Генерация ключа" />
+<figcaption aria-hidden="true">Генерация ключа</figcaption>
+</figure>
+<h2 id="создание-ключа-gpg-1">Создание ключа GPG</h2>
+<p>Ввожу фразу-пароль для защиты нового ключа (рис. <span
+class="citation" data-cites="fig:009">@fig:009</span>).</p>
+<figure id="fig:009">
+<img src="image/лаба%202/8.png" style="width:70.0%"
+alt="Защита ключа GPG" />
+<figcaption aria-hidden="true">Защита ключа GPG</figcaption>
+</figure>
+<h2 id="регистрация-на-github">Регистрация на Github</h2>
+<p>У меня уже был создан аккаунт на Github, соответственно, основные
+данные аккаунта я так же заполняла и проводила его настройку, поэтому
+просто вхожу в свой аккаунт (рис. <span class="citation"
+data-cites="fig:010">@fig:010</span>).</p>
+<figure id="fig:010">
+<img src="image/лаба%202/12.png" style="width:70.0%"
+alt="Аккаунт на Github" />
+<figcaption aria-hidden="true">Аккаунт на Github</figcaption>
+</figure>
+<h2 id="добавление-ключа-gpg-в-github">Добавление ключа GPG в
+Github</h2>
+<p>Вывожу список созданных ключей в терминал, ищу в результате запроса
+отпечаток ключа, он стоит после знака слеша, копирую его в буфер обмена
+(рис. <span class="citation" data-cites="fig:011">@fig:011</span>).</p>
+<figure id="fig:011">
+<img src="image/лаба%202/13.png" style="width:70.0%"
+alt="Вывод списка ключей" />
+<figcaption aria-hidden="true">Вывод списка ключей</figcaption>
+</figure>
+<h2 id="добавление-ключа-gpg-в-github-1">Добавление ключа GPG в
+Github</h2>
+<p>Ввожу в терминале команду, с помощью которой копирую сам ключ GPG в
+буфер обмена, за это отвечает утилита xclip (рис. <span class="citation"
+data-cites="fig:012">@fig:012</span>).</p>
+<figure id="fig:012">
+<img src="image/лаба%202/14.png" style="width:70.0%"
+alt="Копирование ключа в буфер обмена" />
+<figcaption aria-hidden="true">Копирование ключа в буфер
+обмена</figcaption>
+</figure>
+<h2 id="добавление-ключа-gpg-в-github-2">Добавление ключа GPG в
+Github</h2>
+<p>Открываю настройки GirHub, ищу среди них добавление GPG ключа.
+Нажимаю на “New GPG key” и вставляю в поле ключ из буфера обмена (рис.
+<span class="citation" data-cites="fig:013">@fig:013</span>).</p>
+<figure id="fig:013">
+<img src="image/лаба%202/15.png" style="width:70.0%"
+alt="Настройки GitHub" />
+<figcaption aria-hidden="true">Настройки GitHub</figcaption>
+</figure>
+<h2 id="настроить-подписи-git">Настроить подписи Git</h2>
+<p>Настраиваю автоматические подписи коммитов git: используя введенный
+ранее email, указываю git использовать его при создании подписей
+коммитов (рис. <span class="citation"
+data-cites="fig:016">@fig:016</span>).</p>
+<figure id="fig:016">
+<img src="image/лаба%202/16.png" style="width:70.0%"
+alt="Настройка подписей Git" />
+<figcaption aria-hidden="true">Настройка подписей Git</figcaption>
+</figure>
+<h2 id="настройка-gh">Настройка gh</h2>
+<p>Начинаю авторизацию в gh, отвечаю на наводящие вопросы от утилиты, в
+конце выбираю авторизоваться через браузер (рис. <span class="citation"
+data-cites="fig:017">@fig:017</span>).</p>
+<figure id="fig:017">
+<img src="image/лаба%202/16.png" style="width:70.0%"
+alt="Авторизация в gh" />
+<figcaption aria-hidden="true">Авторизация в gh</figcaption>
+</figure>
+<h2 id="настройка-gh-1">Настройка gh</h2>
+<p>Завершаю авторизацию на сайте (рис. <span class="citation"
+data-cites="fig:018">@fig:018</span>).</p>
+<figure id="fig:018">
+<img src="image/лаба%202/17.png" style="width:70.0%"
+alt="Завершение авторизации через браузер" />
+<figcaption aria-hidden="true">Завершение авторизации через
+браузер</figcaption>
+</figure>
+<p>Вижу сообщение о завершении авторизации под именем evdvorkina (рис.
+<span class="citation" data-cites="fig:019">@fig:019</span>).</p>
+<h2 id="настройка-gh-2">Настройка gh</h2>
+<figure id="fig:019">
+<img src="image/лаба%202/18.png" style="width:70.0%"
+alt="Завершение авторизации" />
+<figcaption aria-hidden="true">Завершение авторизации</figcaption>
+</figure>
+<h2 id="создание-репозитория-курса-на-основе-шаблона">Создание
+репозитория курса на основе шаблона</h2>
+<p>Сначала создаю директорию с помощью утилиты mkdir и флага -p, который
+позволяет установить каталоги на всем указанном пути. После этого с
+помощью утилиты cd перехожу в только что созданную директорию
+“Операционные системы”. Далее в терминале ввожу команду gh repo create
+study_2022-2023_os-intro –template
+yamadharma/course-directory-student-trmplate –public, чтобы создать
+репозиторий на основе шаблона репозитория. После этого клонирую
+репозиторий к себе в директорию, я указываю ссылку с протоколом https, а
+не ssh, потому что при авторизации в gh выбрала протокол https (рис.
+<span class="citation" data-cites="fig:020">@fig:020</span>).</p>
+<figure id="fig:020">
+<img src="image/лаба%202/18.png" style="width:70.0%"
+alt="Создание репозитория" />
+<figcaption aria-hidden="true">Создание репозитория</figcaption>
+</figure>
+<h2 id="создание-репозитория-курса-на-основе-шаблона-1">Создание
+репозитория курса на основе шаблона</h2>
+<p>Перехожу в каталог курса с помощью утилиты cd, проверяю содержание
+каталога с помощью утилиты ls (рис. <span class="citation"
+data-cites="fig:021">@fig:021</span>).</p>
+<figure id="fig:021">
+<img src="image/лаба%202/20.png" style="width:70.0%"
+alt="Перемещение между директориями" />
+<figcaption aria-hidden="true">Перемещение между
+директориями</figcaption>
+</figure>
+<h2 id="создание-репозитория-курса-на-основе-шаблона-2">Создание
+репозитория курса на основе шаблона</h2>
+<p>Удаляю лишние файлы с помощью утилиты rm, далее создаю необходимые
+каталоги используя makefile (рис. <span class="citation"
+data-cites="fig:022">@fig:022</span>).</p>
+<figure id="fig:022">
+<img src="image/лаба%202/21.png" style="width:70.0%"
+alt="Удаление файлов и создание каталогов" />
+<figcaption aria-hidden="true">Удаление файлов и создание
+каталогов</figcaption>
+</figure>
+<h2 id="создание-репозитория-курса-на-основе-шаблона-3">Создание
+репозитория курса на основе шаблона</h2>
+<p>Добавляю все новые файлы для отправки на сервер с помощью команды git
+add и комментирую их с помощью git commit. Отправляю файлы на сервер с
+помощью git push.</p>
+<h2 id="выводы">Выводы</h2>
+<p>При выполнении данной лабораторной работы я изучила идеологию и
+применение средств контроля версий, освоила умение по работе с git.</p>
+<h2 class="unnumbered" id="список-литературы">Список литературы</h2>
+<div id="refs" role="list">
+<ol type="1">
+<li>Лабораторная работа № 2 [Электронный ресурс] URL:
+https://esystem.rudn.ru/mod/page/view.php?id=970819</li>
+</ol>
+</div>
